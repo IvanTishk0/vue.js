@@ -1,15 +1,17 @@
 <script setup>
-  import Counter from "./components/Counter/Counter.vue"
+  import css from "./App.module.css";
+  import {ref, reactive, watch} from "vue";
+  import Table from "./components/Table/Table.vue";
+
+  const tables = ref(["table1", "table2", "table3", "table4"])
+
+
 </script>
 
 <template>
-  <h1>Hello</h1>
-  <Counter></Counter>
+  <Table v-for="table in tables">
+    {{table}}
+  </Table>
 </template>
 
-<style scoped>
-h1 {
-  color: red;
-  text-align: center;
-}
-</style>
+
