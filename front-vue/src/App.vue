@@ -9,9 +9,9 @@
 </script>
 
 <template>
-  <div v-for="table in tables">
-    <Table>{{table}}</Table>
-  </div>
+  <Table v-for="table in tables">
+    {{table}}
+  </Table>
 </template>
 
 
