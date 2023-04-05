@@ -1,10 +1,12 @@
 <script setup>
-  import {ref} from "vue";
-  const props = defineProps(["foo", "bar"]);
-  const time = ref(Date.now());
+import {computed, inject} from "vue";
+import css from "./Header.module.css"
 </script>
 
 <template>
-  <button><slot name="header"></slot></button>
-  <slot name="footer"></slot>
+  <div :class="css.header">
+    <div :class="css.header__content">
+      <p><slot></slot></p>
+    </div>
+  </div>
 </template>

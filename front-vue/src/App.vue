@@ -1,17 +1,17 @@
 <script setup>
-  import css from "./App.module.css";
-  import {ref, reactive, watch} from "vue";
-  import Table from "./components/Table/Table.vue";
-
-  const tables = ref(["table1", "table2", "table3", "table4"])
-
-
+  import Header from "./components/Header/Header.vue";
+  import Modal from "./components/Modal/Modal.vue";
+  import {provide, ref, Transition, Teleport} from "vue";
+  const isShow = ref(false);
 </script>
 
 <template>
-  <Table v-for="table in tables">
-    {{table}}
-  </Table>
+  <Header @click="isShow = true">Open simple snackbar</Header>
+  <Modal :show="isShow" @close="isShow = false">Note archived</Modal>
 </template>
+
+<style>
+
+</style>
 
 

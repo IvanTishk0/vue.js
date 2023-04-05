@@ -1,0 +1,36 @@
+.modal {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px #333 solid;
+    border-radius: 5px;
+    width: 300px;
+    height: 50px;
+    background: #3a373a;
+    padding: 0;
+}
+
+.modal__header button {
+    border: none;
+    background: none;
+    position: absolute;
+    right: 2px;
+    top: 10px;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.modal__text1 {
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+.modal__text2 {
+    color: mediumpurple;
+    margin-right: -80px;
+}
