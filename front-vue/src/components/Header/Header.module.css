@@ -1,0 +1,23 @@
+.header {
+    margin: 200px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__content {
+    width: clamp(300px, 50%, 1200px);
+    min-height: 100px;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header__content {
+    text-transform: uppercase;
+    color: #479ef4;
+}
